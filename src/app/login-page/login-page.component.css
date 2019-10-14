@@ -1,0 +1,26 @@
+body{
+  background-color: black;
+
+}
+
+.example-container {
+    display:flex;
+    flex-direction: column;
+  }
+
+  .example-container{
+    width: 100%;
+  }
+  h5{
+    margin-top: 90px;
+  }
+  mat-card{
+    width: calc(40% - 40px);
+  height: calc(40% - 40px);
+  margin-left: 400px;
+  }
+  .li{
+    background-size: 60%;
+  }
+
+ 

@@ -1,0 +1,53 @@
+
+
+<form class="container" [formGroup]="registerForm" novalidate (ngSubmit)="save()" style="border: 2;">
+  <div class="b1">
+
+    <mat-form-field class="example-full-width">
+      <input matInput placeholder="NAME" formControlName="Fname" >
+      <span *ngIf="!registerForm.get('Fname').valid && registerForm.get('Fname').touched">Please enter Fisrt Name !!!</span>
+
+    </mat-form-field><br>
+
+    <mat-form-field class="example-full-width" >
+      <input matInput placeholder="LAST NAME" formControlName="Lname" >
+      <span *ngIf="!registerForm.get('Fname').valid && registerForm.get('Fname').touched">Please enter Last Name !!!</span>
+
+
+      </mat-form-field><br>
+
+
+
+
+
+        <mat-form-field class="example-full-width">
+
+            <input matInput placeholder="MOBILE NUMBER" formControlName="monumber" >
+            <span *ngIf="!registerForm.get('Fname').valid && registerForm.get('Fname').touched">Please enter valid number !!!</span>
+
+
+          </mat-form-field><br>
+
+
+          <mat-form-field class="example-full-width">
+      <input matInput placeholder="EMAIL ID" formControlName="EmailId" >
+      <span *ngIf="!registerForm.get('Fname').valid && registerForm.get('Fname').touched">Please enter valid Email.id !!!</span>
+
+
+      <mat-hint>use like : demo@demo.com</mat-hint>
+            </mat-form-field><br>
+
+            <mat-form-field class="example-full-width">
+
+                <input matInput placeholder="PASSWORD" formControlName="pass" >
+
+
+              </mat-form-field><br>
+
+
+
+                <button type="submit" class="btn btn-primary" (click)="save()"  [routerLink] = "['/login']"  >REGISTER</button>
+                &nbsp;&nbsp;&nbsp;<button type="button" class="btn btn-primary" (click)="onlick()">CANCEL</button>
+
+              </div>
+            </form>

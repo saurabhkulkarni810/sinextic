@@ -1,0 +1,88 @@
+
+
+<div style="background-color: darkgray">
+
+
+  <div fxLayoutAlign="start start" style="background-color: darkgrey">
+  <mat-card style="background-image:url(assets/ssss.jpg)">
+    <mat-card-title>
+        <img src="/assets/login.png" width="80" height="90">
+
+    </mat-card-title>
+
+      <mat-card-header class="info-color white-text text-center py-1" fxFlex="33" style="margin: 15px;">
+        <h5>
+          <strong style="color: #f9faf6;"></strong>
+
+        </h5>
+      </mat-card-header>
+
+
+
+        <form class="text-center" style="color: #f9faf6;">
+
+          <div class="md-form">
+            <input type="email"  placeholder="EMAIL ID"  [(ngModel)]="obj.EmailId" name="username"  class="form-control" matInput>
+            <label for="materialLoginFormEmail">E-mail</label>
+          </div>
+
+          <div class="md-form">
+            <input type="password" placeholder="PASSWORD"   [(ngModel)]="obj.pass"  name="Password"   class="form-control" matInput>
+            <label for="materialLoginFormPassword">Password</label>
+          </div>
+
+          <div class="d-flex justify-content-around">
+            <div>
+              <mat-checkbox>Remember me</mat-checkbox>
+            </div>
+
+          </div>
+
+          <!-- Sign in button -->
+          <button mdbBtn color="info" outline="true" rounded="true" block="true" class="my-4 waves-effect z-depth-0" mdbWavesEffect
+            type="submit" (click)="login()">Sign in</button>
+
+          <p>Not a member?
+            <a [routerLink] = "['/registration']">Register</a>
+          </p>
+
+
+
+        </form>
+
+
+    </mat-card>
+  </div>
+
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!--
+
+  <form class="mx-auto">
+
+    <label>E-mail ID:</label>
+    <input type="email" [(ngModel)]="obj.EmailId" name="username" [ngModelOptions]="{standalone: true}" ><br>
+    <label>Password :</label>
+    <input type="text"  [(ngModel)]="obj.pass"  name="Password" [ngModelOptions]="{standalone: true}" ><br>
+    <button (click)="login()">Login</button>
+
+    <a class="nav-link" [routerLink] = "['/registration']">Create New Account</a>
+  </form> -->

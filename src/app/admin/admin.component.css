@@ -1,0 +1,21 @@
+.example-full-width {
+  width:50%;
+  margin-left: 50px;
+  padding:100;
+}
+.a{
+  color: aliceblue;
+}
+.logo{
+  margin-left:568px;
+
+}
+
+p{
+  font-size:12px;
+  align: center;
+  margin-left: 400px;
+}
+body{
+  background-color: gainsboro;
+}

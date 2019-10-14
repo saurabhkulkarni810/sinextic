@@ -1,0 +1,13 @@
+
+  .example-full-width {
+    width:50%;
+
+  }
+  mat-radio-button ~ .mat-radio-button {
+
+    margin-left: 16px;
+  }
+.b1{
+  margin-left: 550px;
+}
+  
